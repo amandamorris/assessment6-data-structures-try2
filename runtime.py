@@ -60,7 +60,7 @@ def sum_zero_1(numbers):
 
     Put runtime here:
     -----------------
-    [       O(n**2)        ]
+    [       O(n)        ]
 
     """
 
