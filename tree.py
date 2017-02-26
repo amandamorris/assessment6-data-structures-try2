@@ -8,7 +8,8 @@ Given the tree above, in what order would a Depth First Search (DFS) algorithm
 visit each node until finding Chicago-style (starting at food)? Just list the
 order of nodes visited; no need to recreate the state of the algorithm data in
 your answer.
-Food, Italian, lasagna, pizza, thin crust, chicago-style
+Food, Mexican, enchiladas, tacos, burritos, Indian, saag, tikka masala, Italian,
+pizza, Sicilian, NY style, Chicago style
 How is a binary search tree different from other trees?
 A binary search tree is a tree where each node has exactly two children (though
 one or both children may be None), and the node data is arranged so that for any
