@@ -10,7 +10,7 @@ The head is the node with data "Apple".
 Where is the tail?
 The tail is the node with data "Cherry".
 
-What’s the difference between doubly- and singly-linked lists?
+What's the difference between doubly- and singly-linked lists?
 In a singly linked list, each node has an attribute to track the 'next' node in
 the list, but no attribute to track the "prev" node in the list.  In a doubly
 linked list, each node has an attribute for both "next" and "prev", so that
@@ -102,10 +102,11 @@ class LinkedList(object):
         """
 
         # FIXME
-        # current = self.head
-        # while True:
-        #     print current
-        pass
+        current = self.head
+        while current:
+            print current.data
+            current = current.next
+
 
     def get_node_by_index(self, idx):
         """Return a node with the given index::
@@ -124,7 +125,14 @@ class LinkedList(object):
 
         # FIXME
 
-        pass
+        index = 0
+        current = self.head
+        while current:
+            if index == idx:
+                return current
+            current = current.next
+            index += 1
+            # print current, index
 
 if __name__ == "__main__":
     import doctest
